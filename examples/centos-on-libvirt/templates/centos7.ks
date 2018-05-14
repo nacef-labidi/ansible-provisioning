@@ -29,19 +29,6 @@ logvol /var --fstype=xfs --name=lv_var --vgname=vg_root --size=4096
 logvol /tmp --fstype=xfs --name=lv_tmp --vgname=vg_root --size=1024
 logvol swap --fstype=swap --name=lv_swap --vgname=vg_root --size=512 --fsoptions="defaults"
 
-%packages --nobase
-@core --nodefaults
--*-firmware
--NetworkManager*
--alsa*
--audit
--cron*
--iprutils
--kexec-tools
--microcode_ctl
--plymouth*
--postfix
--rdma
--tuned
--wpa_supplicant
+%packages --nobase --ignoremissing --excludedocs # install minimal packages
+@core
 %end
