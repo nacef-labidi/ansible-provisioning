@@ -1,6 +1,6 @@
 network --bootproto dhcp
-url --url http://ftp.belnet.be/ftp.centos.org/7/os/x86_64
-repo --name=updates --baseurl=http://ftp.belnet.be/ftp.centos.org/7/updates/x86_64
+url --url http://centos.mirros.ovh.net/ftp.centos.org/7/os/x86_64
+repo --name=updates --baseurl=http://centos.mirros.ovh.net/ftp.centos.org/7/updates/x86_64
 
 services --disabled=ip6tables,iptables,netfs,rawdevices --enabled=network,sshd
 
