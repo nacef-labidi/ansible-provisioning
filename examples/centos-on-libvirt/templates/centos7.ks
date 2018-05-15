@@ -1,6 +1,6 @@
 network --bootproto dhcp
-url --url http://centos.mirrors.ovh.net/ftp.centos.org/7/os/x86_64
-repo --name=updates --baseurl=http://centos.mirrors.ovh.net/ftp.centos.org/7/updates/x86_64
+url --url http://mirror.centos.ge/7/os/x86_64
+repo --name=updates --baseurl=http://mirror.centos.ge/7/updates/x86_64
 
 services --disabled=ip6tables,iptables,netfs,rawdevices --enabled=network,sshd
 
